@@ -14,6 +14,8 @@ namespace DmitryRechkin\WP\Database;
 
 require_once ABSPATH . WPINC . '/class-wpdb.php';
 
+use wpdb;
+
 class Adapter extends wpdb
 {
 	/**
@@ -23,7 +25,7 @@ class Adapter extends wpdb
 	 * @param bool $allow_bail Optional. Allows the class to bail. Default true.
 	 * @return bool True with a successful connection, false on failure.
 	 */
-	public function db_connect(bool $allow_bail = true): bool // phpcs:ignore
+	public function db_connect($allow_bail = true) // phpcs:ignore
 	{
 		$this->is_mysql = true;
 
