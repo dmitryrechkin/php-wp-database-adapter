@@ -1,0 +1,27 @@
+{
+    "name": "dmitryrechkin/php-wp-database-adapter",
+	"type": "php-wp-database-adapter",
+    "description": "Drop-in replacement for wpdb class with SSL support",
+    "keywords": [
+    ],
+    "license": "AGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Dmitry Rechkin",
+            "email": "rechkin@gmail.com",
+            "homepage": "https://github.com/dmitryrechkin/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3 || ^8.0"
+    },
+    "require-dev": {
+        "dmitryrechkin/php-standard": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
